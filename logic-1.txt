@@ -1,0 +1,136 @@
+Logic-1 >
+1) cigarParty
+  code:-
+
+
+public boolean cigarParty(int cigars, boolean isWeekend) {
+  if(isWeekend== true && cigars>=40)
+  return true;
+  if(! (isWeekend) && cigars >=40 && cigars<= 60)
+  return true;
+else
+return false;
+}
+
+
+2) dateFashion
+  code:-
+
+public int dateFashion(int you, int date) {3
+  if(you<=2 || date<=2){
+  return 0;
+  }
+  else if ( you<=8 || date <=8){
+    return 2;
+  }
+  else 
+  return 1;
+  }
+
+3)squirrelPlay
+code:-
+
+public boolean squirrelPlay(int temp, boolean isSummer) {
+  if (isSummer && temp <= 100 && temp >= 60)
+  return true;
+  if (!(isSummer) && temp <= 90 && temp >=60)
+  return true;
+  else
+  return false;
+}
+
+4)caughtSpeeding
+  code:-
+public int caughtSpeeding(int speed, boolean isBirthday) {
+  if (!(isBirthday)) {
+    if (speed <= 60)
+      return 0;
+    if (speed > 60 && speed <= 80)
+      return 1;
+    else
+      return 2;
+  }
+  else if (speed <=65)
+      return 0;
+    else if (speed > 65 && speed <= 85)
+      return 1;
+    else
+      return 2;
+}
+ 
+
+5)sortaSum
+code:-
+
+public int sortaSum(int a, int b) {
+  int sum = a+b;
+   if(sum >= 10 && sum <= 19)
+    return 20;
+  else
+    return sum;
+}
+
+6)alarmClock
+code:-
+
+public String alarmClock(int day, boolean vacation) {
+  if (vacation) {
+    if(day > 0 && day != 6)
+      return "10:00";
+    else
+      return "off";
+  } 
+  else if (day > 0 && day != 6)
+      return "7:00";
+    else
+      return "10:00";
+
+}
+
+
+7)love6
+code:-
+
+public boolean love6(int a, int b) {
+  if (a == 6 || b == 6)
+    return true;
+  int sum = a+b;
+  int diff = Math.abs(a-b);
+  if (sum == 6 || diff == 6)
+    return true;
+  else
+    return false;
+
+}
+
+
+
+8) in1To10
+code:-
+
+public boolean in1To10(int n, boolean outsideMode) {
+  if (!outsideMode)
+return n >= 1 && n <= 10;
+else
+return n <= 1 || n >= 10;
+}
+
+
+9)specialEleven
+code:-
+
+public boolean specialEleven(int n) {
+  return n%11==0 || n%11==1; 
+}
+
+10)more20
+code:-
+
+public boolean more20(int n) {
+  int a=n%20;
+return a<3&&a!=0;
+}
+
+
+
+
